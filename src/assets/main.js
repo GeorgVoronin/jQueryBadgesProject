@@ -1,4 +1,4 @@
-$(function() {
+
   $.ajax('https://www.codeschool.com/users/anka-adesso.json', {
     dataType: 'jsonp'
     success: function(response) {
@@ -6,7 +6,3 @@ $(function() {
     }
 
   })
-
-  // your code will go here
-
-});
