@@ -13,13 +13,27 @@ $(function() {
   $.ajax({
     url: 'https://www.codeschool.com/users/anka-adesso.json',
     dataType: 'jsonp',
-    success: function(response){
-      $.each(response, function(i, c){
-        var c.courses.completed.append("<div class='course'></div>");
+    success: function(response) {
+      var courses.completed = $.map(response, function(c, i) {
+            var listItem = $(‘<div class="course"></div>’);
+            $('<h3 />', {text:c.courses.completed.title}).
+               appendTo(listItem);
 
+            $('<img />', {src: c.courses.completed.badge}).
+               appendTo(listItem);
+
+
+            $('<a />', {
+              'class': 'btn btn-primary',
+              target: '_blank',
+              href: course.url,
+              text: 'See Course'
+            }).appendTo(listItem);
+            return listItem;
       });
+      $(‘#badges’).html(courses.completed);
+
     }
 
   });
-  $(‘#badges’).html(courses.completed);
 });
