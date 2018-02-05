@@ -1,15 +1,4 @@
 $(function() {
-  $.ajax('https://www.codeschool.com/users/anka-adesso.json', {
-    dataType: 'jsonp',
-    success: function(response) {
-      //handle
-    }
-  })
-
-  $('.course > h3').html
-
-  // your code will go here
-
   $.ajax({
     url: 'https://www.codeschool.com/users/anka-adesso.json',
     dataType: 'jsonp',
@@ -31,9 +20,4 @@ $(function() {
             }).appendTo(listItem);
             return listItem;
       });
-      $(‘#badges’).html(courses.completed);
-
-    }
-
-  });
-});
+      $(‘#badges’).html(courses.completed);}});});
