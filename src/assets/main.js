@@ -10,12 +10,15 @@ $(function() {
 
   // your code will go here
 
-  $.ajax({url: 'https://www.codeschool.com/users/anka-adesso',
-  dataType: 'jsonp',
-  success: function(response){
+  $.ajax({
+    url: 'https://www.codeschool.com/users/anka-adesso',
+    dataType: 'jsonp',
+    success: function(response){
+      $.each(response, function(i,c){
+
+    });
     }
-  }
-});
+  });
 
 
 });
