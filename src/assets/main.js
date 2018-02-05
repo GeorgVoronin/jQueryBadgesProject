@@ -11,7 +11,7 @@ $(function() {
   // your code will go here
 
   $.ajax({
-    url: 'https://www.codeschool.com/users/anka-adesso',
+    url: 'https://www.codeschool.com/users/anka-adesso.json',
     dataType: 'jsonp',
     success: function(response){
       console.log('response', response);
