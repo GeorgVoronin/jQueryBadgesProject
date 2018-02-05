@@ -14,11 +14,8 @@ $(function() {
     url: 'https://www.codeschool.com/users/anka-adesso',
     dataType: 'jsonp',
     success: function(response){
-      $.each(response, function(i,c){
+      console.log('response', response);
 
-    });
     }
   });
-
-
 });
