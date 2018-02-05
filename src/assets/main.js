@@ -10,11 +10,11 @@ $(function() {
 
   // your code will go here
 
-  $.ajax('https://www.codeschool.com/users/anka-adesso',
+  $.ajax({url: 'https://www.codeschool.com/users/anka-adesso',
   dataType: 'jsonp',
   success: function(response){
 
   }
-)
+});
 
 });
