@@ -13,10 +13,6 @@ $(function() {
   $.ajax({url: 'https://www.codeschool.com/users/anka-adesso',
   dataType: 'jsonp',
   success: function(response){
-    $.each(response.courses.completed, function (i, c) {
-    var courses.completed = $('<div></div>');
-    courses.completed.find('div').html(c);
-    return courses.completed;
     }
   }
 });
