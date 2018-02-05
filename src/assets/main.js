@@ -18,7 +18,8 @@ $(function() {
         var c.courses.completed.append("<div class='course'></div>");
 
       });
-    },
-    $(‘#badges’).html(courses.completed);
+    }
+
   });
+  $(‘#badges’).html(courses.completed);
 });
